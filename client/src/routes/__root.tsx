@@ -23,6 +23,11 @@ export const Route = createRootRoute({
         rel: 'stylesheet',
         href: appCss,
       },
+      {
+        rel: 'icon',
+        href: '/money-bag.png',
+        type: 'image/png',
+      },
     ],
   }),
   shellComponent: RootDocument,
