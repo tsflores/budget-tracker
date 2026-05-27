@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Budget Tracker — UI Mockups</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@2.47.0/tabler-icons.min.css">
+<style>
+  * { box-sizing: border-box; }
+  html, body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background: #EFEDE5;
+    color: #1a1a1a;
+  }
+  .page {
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 32px 24px 64px;
+  }
+  .doc-header {
+    background: #003366;
+    color: #fff;
+    padding: 28px 32px;
+    border-radius: 12px;
+    margin-bottom: 32px;
+  }
+  .doc-header h1 {
+    margin: 0 0 8px;
+    font-size: 24px;
+    font-weight: 500;
+    color: #B5A167;
+  }
+  .doc-header p {
+    margin: 0;
+    font-size: 14px;
+    color: rgba(255,255,255,0.85);
+    line-height: 1.6;
+  }
+  .palette-row {
+    display: flex;
+    gap: 16px;
+    margin-top: 16px;
+    font-size: 12px;
+  }
+  .palette-row span {
+    color: rgba(255,255,255,0.85);
+  }
+  .swatch {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 2px;
+    vertical-align: middle;
+    margin-right: 6px;
+    border: 1px solid rgba(255,255,255,0.2);
+  }
+  .screen-label {
+    font-size: 12px;
+    color: #B5A167;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin: 32px 0 8px;
+  }
+  .screen {
+    border: 1px solid #d8d8d8;
+    border-radius: 12px;
+    overflow: hidden;
+    margin-bottom: 32px;
+    background: #fff;
+  }
+  .topnav {
+    background: #003366;
+    padding: 14px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .brand {
+    color: #fff;
+    font-weight: 500;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .nav-tabs {
+    display: flex;
+    gap: 24px;
+    font-size: 14px;
+  }
+  .nav-tabs span {
+    color: rgba(255,255,255,0.5);
+  }
+  .nav-tabs span.active {
+    color: #B5A167;
+    border-bottom: 2px solid #B5A167;
+    padding-bottom: 4px;
+  }
+  .avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: #B5A167;
+    color: #003366;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .topnav-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  table { border-collapse: collapse; }
+  button { font-family: inherit; }
+  .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); border: 0; }
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="doc-header">
+  <h1>Budget Tracker — UI Mockups</h1>
+  <p>Reference mockups for a 12-month budget planning tool. Progressive web app (MERN stack). Desktop view, responsive target.<br>
+  Use these as visual context for front-end development. No actual expense tracking or variance — planning only at this phase.</p>
+  <div class="palette-row">
+    <span><span class="swatch" style="background:#B5A167;"></span>Primary #B5A167</span>
+    <span><span class="swatch" style="background:#FFFFFF;"></span>Primary #FFFFFF</span>
+    <span><span class="swatch" style="background:#003366;"></span>Secondary #003366</span>
+  </div>
+</div>
+
+<!-- ============ SCREEN 1: SETUP ============ -->
+<div class="screen-label">SCREEN 1 — SETUP</div>
+<div class="screen">
+  <div class="topnav">
+    <div style="display: flex; align-items: center; gap: 32px;">
+      <div class="brand">
+        <i class="ti ti-wallet" style="font-size: 20px; color: #B5A167;"></i>
+        Budget Tracker
+      </div>
+      <div class="nav-tabs">
+        <span class="active">Setup</span>
+        <span>Income</span>
+        <span>Expenses</span>
+        <span>Categories</span>
+        <span>Overview</span>
+      </div>
+    </div>
+    <div class="topnav-right">
+      <i class="ti ti-bell" style="font-size: 18px; color: rgba(255,255,255,0.7);"></i>
+      <div class="avatar">JD</div>
+    </div>
+  </div>
+
+  <div style="background: #F5F3EC; padding: 12px 24px; display: flex; align-items: center; gap: 12px; font-size: 13px;">
+    <span style="background: #B5A167; color: #003366; width: 22px; height: 22px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-weight: 500;">1</span>
+    <span style="color: #003366; font-weight: 500;">Setup</span>
+    <span style="color: #B5A167;">›</span>
+    <span style="color: #888; display: flex; align-items: center; gap: 8px;"><span style="width:22px;height:22px;border-radius:50%;border:1px solid #ccc;display:inline-flex;align-items:center;justify-content:center;">2</span>Income</span>
+    <span style="color: #ccc;">›</span>
+    <span style="color: #888; display: flex; align-items: center; gap: 8px;"><span style="width:22px;height:22px;border-radius:50%;border:1px solid #ccc;display:inline-flex;align-items:center;justify-content:center;">3</span>Expenses</span>
+    <span style="color: #ccc;">›</span>
+    <span style="color: #888; display: flex; align-items: center; gap: 8px;"><span style="width:22px;height:22px;border-radius:50%;border:1px solid #ccc;display:inline-flex;align-items:center;justify-content:center;">4</span>Review</span>
+  </div>
+
+  <div style="padding: 40px 60px;">
+    <h1 style="color: #003366; font-size: 24px; margin: 0 0 8px;">Let's start your 12-month budget</h1>
+    <p style="color: #666; font-size: 14px; margin: 0 0 32px;">Choose when your budget cycle begins. You'll plan income and expenses for the next 12 months from this date.</p>
+
+    <div style="max-width: 520px;">
+      <label style="display: block; font-size: 13px; font-weight: 500; color: #003366; margin-bottom: 8px;">Budget name</label>
+      <div style="border: 1px solid #d0d0d0; border-radius: 6px; padding: 10px 14px; font-size: 14px; color: #333; margin-bottom: 24px;">2026 Household Plan</div>
+
+      <label style="display: block; font-size: 13px; font-weight: 500; color: #003366; margin-bottom: 8px;">Starting month</label>
+      <div style="display: flex; gap: 12px; margin-bottom: 24px;">
+        <div style="flex: 1; border: 2px solid #B5A167; border-radius: 6px; padding: 14px; background: #FAF7EE;">
+          <div style="font-size: 11px; color: #B5A167; font-weight: 500; letter-spacing: 0.5px;">MONTH</div>
+          <div style="font-size: 16px; color: #003366; font-weight: 500; margin-top: 4px;">January 2026</div>
+        </div>
+        <div style="flex: 0 0 56px; display: flex; align-items: center; justify-content: center; border: 1px solid #d0d0d0; border-radius: 6px; cursor: pointer;">
+          <i class="ti ti-calendar" style="font-size: 20px; color: #003366;"></i>
+        </div>
+      </div>
+
+      <div style="background: #F5F3EC; border-left: 3px solid #B5A167; padding: 12px 16px; border-radius: 0 4px 4px 0; margin-bottom: 32px;">
+        <div style="font-size: 13px; color: #003366;"><strong style="font-weight: 500;">Your budget will run:</strong> January 2026 through December 2026</div>
+      </div>
+
+      <div style="display: flex; gap: 12px;">
+        <button style="background: #B5A167; color: #003366; border: none; padding: 12px 24px; border-radius: 6px; font-size: 14px; font-weight: 500; cursor: pointer;">Continue to Income →</button>
+        <button style="background: #fff; color: #003366; border: 1px solid #003366; padding: 12px 24px; border-radius: 6px; font-size: 14px; cursor: pointer;">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ SCREEN 2: INCOME PLANNING ============ -->
+<div class="screen-label">SCREEN 2 — INCOME PLANNING</div>
+<div class="screen">
+  <div class="topnav">
+    <div style="display: flex; align-items: center; gap: 32px;">
+      <div class="brand">
+        <i class="ti ti-wallet" style="font-size: 20px; color: #B5A167;"></i>
+        Budget Tracker
+      </div>
+      <div class="nav-tabs">
+        <span>Setup</span>
+        <span class="active">Income</span>
+        <span>Expenses</span>
+        <span>Categories</span>
+        <span>Overview</span>
+      </div>
+    </div>
+    <div class="topnav-right">
+      <i class="ti ti-bell" style="font-size: 18px; color: rgba(255,255,255,0.7);"></i>
+      <div class="avatar">JD</div>
+    </div>
+  </div>
+
+  <div style="padding: 24px 32px; border-bottom: 1px solid #e5e5e5; display: flex; justify-content: space-between; align-items: center;">
+    <div>
+      <h2 style="color: #003366; font-size: 20px; margin: 0;">Income sources</h2>
+      <p style="color: #666; font-size: 13px; margin: 4px 0 0;">Plan income for Jan 2026 – Dec 2026 · Click any cell to edit</p>
+    </div>
+    <div style="display: flex; gap: 8px;">
+      <button style="background: #fff; color: #003366; border: 1px solid #003366; padding: 8px 14px; border-radius: 6px; font-size: 13px; cursor: pointer;"><i class="ti ti-copy" style="font-size: 15px; margin-right: 4px;"></i>Fill across</button>
+      <button style="background: #B5A167; color: #003366; border: none; padding: 8px 14px; border-radius: 6px; font-size: 13px; font-weight: 500; cursor: pointer;"><i class="ti ti-plus" style="font-size: 15px; margin-right: 4px;"></i>Add source</button>
+    </div>
+  </div>
+
+  <div style="overflow-x: auto; padding: 0 32px 24px;">
+    <table style="width: 100%; font-size: 12px; margin-top: 16px; min-width: 1100px;">
+      <thead>
+        <tr style="background: #F5F3EC;">
+          <th style="text-align: left; padding: 10px 12px; color: #003366; font-weight: 500; border-bottom: 2px solid #B5A167; min-width: 160px;">Source</th>
+          <th style="padding: 10px 6px; color: #003366; font-weight: 500; border-bottom: 2px solid #B5A167;">Jan</th>
+          <th style="padding: 10px 6px; color: #003366; font-weight: 500; border-bottom: 2px solid #B5A167;">Feb</th>
+          <th style="padding: 10px 6px; color: #003366; font-weight: 500; border-bottom: 2px solid #B5A167;">Mar</th>
+          <th style="padding: 10px 6px; color: #003366; font-weight: 500; border-bottom: 2px solid #B5A167;">Apr</th>
+          <th style="padding: 10px 6px; color: #003366; font-weight: 500; border-bottom: 2px solid #B5A167;">May</th>
+          <th style="padding: 10px 6px; color: #003366; font-weight: 500; border-bottom: 2px solid #B5A167;">Jun</th>
+          <th style="padding: 10px 6px; color: #003366; font-weight: 500; border-bottom: 2px solid #B5A167;">Jul</th>
+          <th style="padding: 10px 6px; color: #003366; font-weight: 500; border-bottom: 2px solid #B5A167;">Aug</th>
+          <th style="padding: 10px 6px; color: #003366; font-weight: 500; border-bottom: 2px solid #B5A167;">Sep</th>
+          <th style="padding: 10px 6px; color: #003366; font-weight: 500; border-bottom: 2px solid #B5A167;">Oct</th>
+          <th style="padding: 10px 6px; color: #003366; font-weight: 500; border-bottom: 2px solid #B5A167;">Nov</th>
+          <th style="padding: 10px 6px; color: #003366; font-weight: 500; border-bottom: 2px solid #B5A167;">Dec</th>
+          <th style="padding: 10px 12px; color: #003366; font-weight: 500; border-bottom: 2px solid #B5A167; background: #FAF7EE;">Total</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td style="padding: 10px 12px; border-bottom: 1px solid #eee; color: #003366; font-weight: 500;">Primary salary</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">6,500</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">6,500</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">6,500</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">6,500</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">6,500</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">6,500</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">6,500</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">6,500</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">6,500</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">6,500</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">6,500</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">6,500</td>
+          <td style="padding: 8px 12px; border-bottom: 1px solid #eee; text-align: right; color: #003366; font-weight: 500; background: #FAF7EE;">78,000</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px 12px; border-bottom: 1px solid #eee; color: #003366; font-weight: 500;">Spouse salary</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">4,200</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">4,200</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">4,200</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">4,200</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">4,200</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">4,200</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">4,200</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">4,200</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">4,200</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">4,200</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">4,200</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">4,200</td>
+          <td style="padding: 8px 12px; border-bottom: 1px solid #eee; text-align: right; color: #003366; font-weight: 500; background: #FAF7EE;">50,400</td>
+        </tr>
+        <tr style="background: #FAFAFA;">
+          <td style="padding: 10px 12px; border-bottom: 1px solid #eee; color: #003366; font-weight: 500;">Freelance</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">800</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">800</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">1,200</td>
+          <td style="padding: 8px 6px; border: 2px solid #B5A167; text-align: right; color: #003366; background: #fff; font-weight: 500;">1,500</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">1,200</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">800</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">800</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">1,000</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">1,000</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">1,500</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">1,500</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">2,000</td>
+          <td style="padding: 8px 12px; border-bottom: 1px solid #eee; text-align: right; color: #003366; font-weight: 500; background: #FAF7EE;">14,100</td>
+        </tr>
+        <tr>
+          <td style="padding: 10px 12px; border-bottom: 1px solid #eee; color: #003366; font-weight: 500;">Investment income</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">250</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">250</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">250</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">250</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">250</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">250</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">250</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">250</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">250</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">250</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">250</td>
+          <td style="padding: 8px 6px; border-bottom: 1px solid #eee; text-align: right;">250</td>
+          <td style="padding: 8px 12px; border-bottom: 1px solid #eee; text-align: right; color: #003366; font-weight: 500; background: #FAF7EE;">3,000</td>
+        </tr>
+        <tr style="background: #003366;">
+          <td style="padding: 12px; color: #B5A167; font-weight: 500;">Total income</td>
+          <td style="padding: 10px 6px; text-align: right; color: #fff; font-weight: 500;">11,750</td>
+          <td style="padding: 10px 6px; text-align: right; color: #fff; font-weight: 500;">11,750</td>
+          <td style="padding: 10px 6px; text-align: right; color: #fff; font-weight: 500;">12,150</td>
+          <td style="padding: 10px 6px; text-align: right; color: #fff; font-weight: 500;">12,450</td>
+          <td style="padding: 10px 6px; text-align: right; color: #fff; font-weight: 500;">12,150</td>
+          <td style="padding: 10px 6px; text-align: right; color: #fff; font-weight: 500;">11,750</td>
+          <td style="padding: 10px 6px; text-align: right; color: #fff; font-weight: 500;">11,750</td>
+          <td style="padding: 10px 6px; text-align: right; color: #fff; font-weight: 500;">11,950</td>
+          <td style="padding: 10px 6px; text-align: right; color: #fff; font-weight: 500;">11,950</td>
+          <td style="padding: 10px 6px; text-align: right; color: #fff; font-weight: 500;">12,450</td>
+          <td style="padding: 10px 6px; text-align: right; color: #fff; font-weight: 500;">12,450</td>
+          <td style="padding: 10px 6px; text-align: right; color: #fff; font-weight: 500;">12,950</td>
+          <td style="padding: 10px 12px; text-align: right; color: #B5A167; font-weight: 500; background: #002952;">145,500</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ============ SCREEN 3: EXPENSE PLANNING ============ -->
+<div class="screen-label">SCREEN 3 — EXPENSE PLANNING BY CATEGORY</div>
+<div class="screen">
+  <div class="topnav">
+    <div style="display: flex; align-items: center; gap: 32px;">
+      <div class="brand">
+        <i class="ti ti-wallet" style="font-size: 20px; color: #B5A167;"></i>
+        Budget Tracker
+      </div>
+      <div class="nav-tabs">
+        <span>Setup</span>
+        <span>Income</span>
+        <span class="active">Expenses</span>
+        <span>Categories</span>
+        <span>Overview</span>
+      </div>
+    </div>
+    <div class="topnav-right">
+      <i class="ti ti-bell" style="font-size: 18px; color: rgba(255,255,255,0.7);"></i>
+      <div class="avatar">JD</div>
+    </div>
+  </div>
+
+  <div style="display: flex; min-height: 500px;">
+    <div style="width: 220px; background: #F5F3EC; border-right: 1px solid #e5e5e5; padding: 20px 0;">
+      <div style="padding: 0 20px 12px; font-size: 11px; color: #B5A167; font-weight: 500; letter-spacing: 0.5px;">CATEGORIES</div>
+
+      <div style="padding: 10px 20px; background: #fff; border-left: 3px solid #B5A167; color: #003366; font-size: 13px; font-weight: 500; display: flex; justify-content: space-between; align-items: center;">
+        <span><i class="ti ti-home" style="font-size: 15px; margin-right: 8px; color: #B5A167;"></i>All categories</span>
+        <span style="font-size: 11px; color: #888;">8</span>
+      </div>
+
+      <div style="padding: 10px 20px; color: #003366; font-size: 13px; display: flex; justify-content: space-between; align-items: center;">
+        <span><i class="ti ti-home-2" style="font-size: 15px; margin-right: 8px; color: #666;"></i>Housing</span>
+        <span style="font-size: 11px; color: #888;">3</span>
+      </div>
+      <div style="padding: 10px 20px; color: #003366; font-size: 13px; display: flex; justify-content: space-between; align-items: center;">
+        <span><i class="ti ti-car" style="font-size: 15px; margin-right: 8px; color: #666;"></i>Transportation</span>
+        <span style="font-size: 11px; color: #888;">2</span>
+      </div>
+      <div style="padding: 10px 20px; color: #003366; font-size: 13px; display: flex; justify-content: space-between; align-items: center;">
+        <span><i class="ti ti-shopping-cart" style="font-size: 15px; margin-right: 8px; color: #666;"></i>Food & groceries</span>
+        <span style="font-size: 11px; color: #888;">2</span>
+      </div>
+      <div style="padding: 10px 20px; color: #003366; font-size: 13px; display: flex; justify-content: space-between; align-items: center;">
+        <span><i class="ti ti-heartbeat" style="font-size: 15px; margin-right: 8px; color: #666;"></i>Healthcare</span>
+        <span style="font-size: 11px; color: #888;">2</span>
+      </div>
+      <div style="padding: 10px 20px; color: #003366; font-size: 13px; display: flex; justify-content: space-between; align-items: center;">
+        <span><i class="ti ti-device-tv" style="font-size: 15px; margin-right: 8px; color: #666;"></i>Entertainment</span>
+        <span style="font-size: 11px; color: #888;">1</span>
+      </div>
+      <div style="padding: 10px 20px; color: #003366; font-size: 13px; display: flex; justify-content: space-between; align-items: center;">
+        <span><i class="ti ti-pig-money" style="font-size: 15px; margin-right: 8px; color: #666;"></i>Savings & debt</span>
+        <span style="font-size: 11px; color: #888;">2</span>
+      </div>
+
+      <div style="margin-top: 16px; padding: 0 20px;">
+        <button style="background: transparent; color: #003366; border: 1px dashed #B5A167; padding: 8px 12px; border-radius: 6px; font-size: 12px; cursor: pointer; width: 100%;"><i class="ti ti-plus" style="font-size: 14px; margin-right: 4px;"></i>Manage categories</button>
+      </div>
+    </div>
+
+    <div style="flex: 1; padding: 20px 24px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+        <div>
+          <h2 style="color: #003366; font-size: 18px; margin: 0;">All expenses</h2>
+          <p style="color: #666; font-size: 12px; margin: 2px 0 0;">12 line items across 6 categories</p>
+        </div>
+        <div style="display: flex; gap: 8px;">
+          <button style="background: #fff; color: #003366; border: 1px solid #003366; padding: 6px 12px; border-radius: 6px; font-size: 12px; cursor: pointer;"><i class="ti ti-copy" style="font-size: 13px; margin-right: 4px;"></i>Fill across</button>
+          <button style="background: #B5A167; color: #003366; border: none; padding: 6px 12px; border-radius: 6px; font-size: 12px; font-weight: 500; cursor: pointer;"><i class="ti ti-plus" style="font-size: 13px; margin-right: 4px;"></i>Add expense</button>
+        </div>
+      </div>
+
+      <div style="overflow-x: auto;">
+        <table style="width: 100%; font-size: 11px; min-width: 900px;">
+          <thead>
+            <tr style="background: #F5F3EC;">
+              <th style="text-align: left; padding: 8px 10px; color: #003366; font-weight: 500; border-bottom: 2px solid #B5A167; min-width: 180px;">Expense</th>
+              <th style="padding: 8px 4px; color: #003366; font-weight: 500; border-bottom: 2px solid #B5A167;">Jan</th>
+              <th style="padding: 8px 4px; color: #003366; font-weight: 500; border-bottom: 2px solid #B5A167;">Feb</th>
+              <th style="padding: 8px 4px; color: #003366; font-weight: 500; border-bottom: 2px solid #B5A167;">Mar</th>
+              <th style="padding: 8px 4px; color: #003366; font-weight: 500; border-bottom: 2px solid #B5A167;">Apr</th>
+              <th style="padding: 8px 4px; color: #003366; font-weight: 500; border-bottom: 2px solid #B5A167;">May</th>
+              <th style="padding: 8px 4px; color: #003366; font-weight: 500; border-bottom: 2px solid #B5A167;">Jun</th>
+              <th style="padding: 8px 4px; color: #003366; font-weight: 500; border-bottom: 2px solid #B5A167;">Jul</th>
+              <th style="padding: 8px 4px; color: #003366; font-weight: 500; border-bottom: 2px solid #B5A167;">Aug</th>
+              <th style="padding: 8px 4px; color: #003366; font-weight: 500; border-bottom: 2px solid #B5A167;">Sep</th>
+              <th style="padding: 8px 4px; color: #003366; font-weight: 500; border-bottom: 2px solid #B5A167;">Oct</th>
+              <th style="padding: 8px 4px; color: #003366; font-weight: 500; border-bottom: 2px solid #B5A167;">Nov</th>
+              <th style="padding: 8px 4px; color: #003366; font-weight: 500; border-bottom: 2px solid #B5A167;">Dec</th>
+              <th style="padding: 8px 10px; color: #003366; font-weight: 500; border-bottom: 2px solid #B5A167; background: #FAF7EE;">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background: #003366;">
+              <td colspan="14" style="padding: 6px 10px; color: #B5A167; font-size: 10px; font-weight: 500; letter-spacing: 0.5px;">▾ HOUSING</td>
+            </tr>
+            <tr>
+              <td style="padding: 7px 10px 7px 24px; border-bottom: 1px solid #eee;">Mortgage</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">2,400</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">2,400</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">2,400</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">2,400</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">2,400</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">2,400</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">2,400</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">2,400</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">2,400</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">2,400</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">2,400</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">2,400</td>
+              <td style="padding: 6px 10px; border-bottom: 1px solid #eee; text-align: right; color: #003366; font-weight: 500; background: #FAF7EE;">28,800</td>
+            </tr>
+            <tr>
+              <td style="padding: 7px 10px 7px 24px; border-bottom: 1px solid #eee;">Utilities</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">320</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">340</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">290</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">240</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">220</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">280</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">350</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">360</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">300</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">240</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">280</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">320</td>
+              <td style="padding: 6px 10px; border-bottom: 1px solid #eee; text-align: right; color: #003366; font-weight: 500; background: #FAF7EE;">3,540</td>
+            </tr>
+            <tr>
+              <td style="padding: 7px 10px 7px 24px; border-bottom: 1px solid #eee;">Internet & phone</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">180</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">180</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">180</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">180</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">180</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">180</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">180</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">180</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">180</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">180</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">180</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">180</td>
+              <td style="padding: 6px 10px; border-bottom: 1px solid #eee; text-align: right; color: #003366; font-weight: 500; background: #FAF7EE;">2,160</td>
+            </tr>
+            <tr style="background: #FAF7EE;">
+              <td style="padding: 7px 10px 7px 24px; border-bottom: 1px solid #B5A167; color: #003366; font-weight: 500; font-style: italic;">Housing subtotal</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #B5A167; text-align: right; color: #003366; font-weight: 500;">2,900</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #B5A167; text-align: right; color: #003366; font-weight: 500;">2,920</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #B5A167; text-align: right; color: #003366; font-weight: 500;">2,870</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #B5A167; text-align: right; color: #003366; font-weight: 500;">2,820</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #B5A167; text-align: right; color: #003366; font-weight: 500;">2,800</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #B5A167; text-align: right; color: #003366; font-weight: 500;">2,860</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #B5A167; text-align: right; color: #003366; font-weight: 500;">2,930</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #B5A167; text-align: right; color: #003366; font-weight: 500;">2,940</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #B5A167; text-align: right; color: #003366; font-weight: 500;">2,880</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #B5A167; text-align: right; color: #003366; font-weight: 500;">2,820</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #B5A167; text-align: right; color: #003366; font-weight: 500;">2,860</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #B5A167; text-align: right; color: #003366; font-weight: 500;">2,900</td>
+              <td style="padding: 6px 10px; border-bottom: 1px solid #B5A167; text-align: right; color: #003366; font-weight: 500;">34,500</td>
+            </tr>
+
+            <tr style="background: #003366;">
+              <td colspan="14" style="padding: 6px 10px; color: #B5A167; font-size: 10px; font-weight: 500; letter-spacing: 0.5px;">▾ TRANSPORTATION</td>
+            </tr>
+            <tr>
+              <td style="padding: 7px 10px 7px 24px; border-bottom: 1px solid #eee;">Car payment</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">450</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">450</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">450</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">450</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">450</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">450</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">450</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">450</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">450</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">450</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">450</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">450</td>
+              <td style="padding: 6px 10px; border-bottom: 1px solid #eee; text-align: right; color: #003366; font-weight: 500; background: #FAF7EE;">5,400</td>
+            </tr>
+            <tr>
+              <td style="padding: 7px 10px 7px 24px; border-bottom: 1px solid #eee;">Fuel & maintenance</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">280</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">280</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">280</td>
+              <td style="padding: 6px 4px; border: 2px solid #B5A167; text-align: right; color: #003366; background: #fff; font-weight: 500;">320</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">280</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">280</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">300</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">300</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">280</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">280</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">280</td>
+              <td style="padding: 6px 4px; border-bottom: 1px solid #eee; text-align: right;">280</td>
+              <td style="padding: 6px 10px; border-bottom: 1px solid #eee; text-align: right; color: #003366; font-weight: 500; background: #FAF7EE;">3,440</td>
+            </tr>
+            <tr style="background: #FAF7EE;">
+              <td style="padding: 7px 10px 7px 24px; border-bottom: 1px solid #B5A167; color: #003366; font-weight: 500; font-style: italic;">Transportation subtotal</td>
+              <td colspan="12" style="padding: 6px 4px; border-bottom: 1px solid #B5A167; text-align: right; color: #888; font-size: 10px; font-style: italic; padding-right: 10px;">… subtotals for each month …</td>
+              <td style="padding: 6px 10px; border-bottom: 1px solid #B5A167; text-align: right; color: #003366; font-weight: 500;">8,840</td>
+            </tr>
+
+            <tr style="background: #003366;">
+              <td colspan="14" style="padding: 6px 10px; color: #B5A167; font-size: 10px; font-weight: 500; letter-spacing: 0.5px;">▸ FOOD & GROCERIES <span style="color: rgba(255,255,255,0.5); margin-left: 8px; font-weight: 400;">collapsed · 2 items · $9,600</span></td>
+            </tr>
+            <tr style="background: #003366;">
+              <td colspan="14" style="padding: 6px 10px; color: #B5A167; font-size: 10px; font-weight: 500; letter-spacing: 0.5px;">▸ HEALTHCARE <span style="color: rgba(255,255,255,0.5); margin-left: 8px; font-weight: 400;">collapsed · 2 items · $4,800</span></td>
+            </tr>
+            <tr style="background: #003366;">
+              <td colspan="14" style="padding: 6px 10px; color: #B5A167; font-size: 10px; font-weight: 500; letter-spacing: 0.5px;">▸ ENTERTAINMENT <span style="color: rgba(255,255,255,0.5); margin-left: 8px; font-weight: 400;">collapsed · 1 item · $1,800</span></td>
+            </tr>
+            <tr style="background: #003366;">
+              <td colspan="14" style="padding: 6px 10px; color: #B5A167; font-size: 10px; font-weight: 500; letter-spacing: 0.5px;">▸ SAVINGS & DEBT <span style="color: rgba(255,255,255,0.5); margin-left: 8px; font-weight: 400;">collapsed · 2 items · $24,000</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ SCREEN 4: CATEGORY MANAGEMENT ============ -->
+<div class="screen-label">SCREEN 4 — CATEGORY MANAGEMENT</div>
+<div class="screen">
+  <div class="topnav">
+    <div style="display: flex; align-items: center; gap: 32px;">
+      <div class="brand">
+        <i class="ti ti-wallet" style="font-size: 20px; color: #B5A167;"></i>
+        Budget Tracker
+      </div>
+      <div class="nav-tabs">
+        <span>Setup</span>
+        <span>Income</span>
+        <span>Expenses</span>
+        <span class="active">Categories</span>
+        <span>Overview</span>
+      </div>
+    </div>
+    <div class="topnav-right">
+      <i class="ti ti-bell" style="font-size: 18px; color: rgba(255,255,255,0.7);"></i>
+      <div class="avatar">JD</div>
+    </div>
+  </div>
+
+  <div style="padding: 32px 40px;">
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 24px;">
+      <div>
+        <h2 style="color: #003366; font-size: 20px; margin: 0;">Manage categories</h2>
+        <p style="color: #666; font-size: 13px; margin: 4px 0 0;">Organize expenses into categories. Drag to reorder.</p>
+      </div>
+      <button style="background: #B5A167; color: #003366; border: none; padding: 10px 18px; border-radius: 6px; font-size: 13px; font-weight: 500; cursor: pointer;"><i class="ti ti-plus" style="font-size: 15px; margin-right: 4px;"></i>New category</button>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px;">
+
+      <div style="border: 1px solid #e5e5e5; border-radius: 8px; padding: 16px; display: flex; align-items: center; gap: 14px;">
+        <i class="ti ti-grip-vertical" style="font-size: 18px; color: #ccc; cursor: grab;"></i>
+        <div style="width: 40px; height: 40px; border-radius: 8px; background: #003366; display: flex; align-items: center; justify-content: center;">
+          <i class="ti ti-home-2" style="font-size: 20px; color: #B5A167;"></i>
+        </div>
+        <div style="flex: 1;">
+          <div style="color: #003366; font-weight: 500; font-size: 14px;">Housing</div>
+          <div style="color: #888; font-size: 12px;">3 expenses · $34,500/yr</div>
+        </div>
+        <i class="ti ti-edit" style="font-size: 16px; color: #B5A167; cursor: pointer;"></i>
+        <i class="ti ti-trash" style="font-size: 16px; color: #999; cursor: pointer;"></i>
+      </div>
+
+      <div style="border: 1px solid #e5e5e5; border-radius: 8px; padding: 16px; display: flex; align-items: center; gap: 14px;">
+        <i class="ti ti-grip-vertical" style="font-size: 18px; color: #ccc; cursor: grab;"></i>
+        <div style="width: 40px; height: 40px; border-radius: 8px; background: #003366; display: flex; align-items: center; justify-content: center;">
+          <i class="ti ti-car" style="font-size: 20px; color: #B5A167;"></i>
+        </div>
+        <div style="flex: 1;">
+          <div style="color: #003366; font-weight: 500; font-size: 14px;">Transportation</div>
+          <div style="color: #888; font-size: 12px;">2 expenses · $8,840/yr</div>
+        </div>
+        <i class="ti ti-edit" style="font-size: 16px; color: #B5A167; cursor: pointer;"></i>
+        <i class="ti ti-trash" style="font-size: 16px; color: #999; cursor: pointer;"></i>
+      </div>
+
+      <div style="border: 2px solid #B5A167; border-radius: 8px; padding: 16px; background: #FAF7EE; display: flex; align-items: center; gap: 14px;">
+        <i class="ti ti-grip-vertical" style="font-size: 18px; color: #B5A167; cursor: grab;"></i>
+        <div style="width: 40px; height: 40px; border-radius: 8px; background: #003366; display: flex; align-items: center; justify-content: center;">
+          <i class="ti ti-shopping-cart" style="font-size: 20px; color: #B5A167;"></i>
+        </div>
+        <div style="flex: 1;">
+          <div style="color: #003366; font-weight: 500; font-size: 14px;">Food & groceries <span style="font-size: 10px; background: #B5A167; color: #003366; padding: 2px 6px; border-radius: 3px; margin-left: 6px;">EDITING</span></div>
+          <div style="color: #003366; font-size: 12px;">2 expenses · $9,600/yr</div>
+        </div>
+        <i class="ti ti-check" style="font-size: 18px; color: #003366; cursor: pointer;"></i>
+        <i class="ti ti-x" style="font-size: 18px; color: #999; cursor: pointer;"></i>
+      </div>
+
+      <div style="border: 1px solid #e5e5e5; border-radius: 8px; padding: 16px; display: flex; align-items: center; gap: 14px;">
+        <i class="ti ti-grip-vertical" style="font-size: 18px; color: #ccc; cursor: grab;"></i>
+        <div style="width: 40px; height: 40px; border-radius: 8px; background: #003366; display: flex; align-items: center; justify-content: center;">
+          <i class="ti ti-heartbeat" style="font-size: 20px; color: #B5A167;"></i>
+        </div>
+        <div style="flex: 1;">
+          <div style="color: #003366; font-weight: 500; font-size: 14px;">Healthcare</div>
+          <div style="color: #888; font-size: 12px;">2 expenses · $4,800/yr</div>
+        </div>
+        <i class="ti ti-edit" style="font-size: 16px; color: #B5A167; cursor: pointer;"></i>
+        <i class="ti ti-trash" style="font-size: 16px; color: #999; cursor: pointer;"></i>
+      </div>
+
+      <div style="border: 1px solid #e5e5e5; border-radius: 8px; padding: 16px; display: flex; align-items: center; gap: 14px;">
+        <i class="ti ti-grip-vertical" style="font-size: 18px; color: #ccc; cursor: grab;"></i>
+        <div style="width: 40px; height: 40px; border-radius: 8px; background: #003366; display: flex; align-items: center; justify-content: center;">
+          <i class="ti ti-device-tv" style="font-size: 20px; color: #B5A167;"></i>
+        </div>
+        <div style="flex: 1;">
+          <div style="color: #003366; font-weight: 500; font-size: 14px;">Entertainment</div>
+          <div style="color: #888; font-size: 12px;">1 expense · $1,800/yr</div>
+        </div>
+        <i class="ti ti-edit" style="font-size: 16px; color: #B5A167; cursor: pointer;"></i>
+        <i class="ti ti-trash" style="font-size: 16px; color: #999; cursor: pointer;"></i>
+      </div>
+
+      <div style="border: 1px solid #e5e5e5; border-radius: 8px; padding: 16px; display: flex; align-items: center; gap: 14px;">
+        <i class="ti ti-grip-vertical" style="font-size: 18px; color: #ccc; cursor: grab;"></i>
+        <div style="width: 40px; height: 40px; border-radius: 8px; background: #003366; display: flex; align-items: center; justify-content: center;">
+          <i class="ti ti-pig-money" style="font-size: 20px; color: #B5A167;"></i>
+        </div>
+        <div style="flex: 1;">
+          <div style="color: #003366; font-weight: 500; font-size: 14px;">Savings & debt</div>
+          <div style="color: #888; font-size: 12px;">2 expenses · $24,000/yr</div>
+        </div>
+        <i class="ti ti-edit" style="font-size: 16px; color: #B5A167; cursor: pointer;"></i>
+        <i class="ti ti-trash" style="font-size: 16px; color: #999; cursor: pointer;"></i>
+      </div>
+    </div>
+
+    <div style="margin-top: 16px; border: 1px dashed #B5A167; border-radius: 8px; padding: 20px; text-align: center; color: #B5A167; font-size: 13px; cursor: pointer;">
+      <i class="ti ti-plus" style="font-size: 16px; margin-right: 6px;"></i>Add a new category
+    </div>
+  </div>
+</div>
+
+<!-- ============ SCREEN 5: 12-MONTH OVERVIEW ============ -->
+<div class="screen-label">SCREEN 5 — 12-MONTH OVERVIEW (DASHBOARD)</div>
+<div class="screen">
+  <div class="topnav">
+    <div style="display: flex; align-items: center; gap: 32px;">
+      <div class="brand">
+        <i class="ti ti-wallet" style="font-size: 20px; color: #B5A167;"></i>
+        Budget Tracker
+      </div>
+      <div class="nav-tabs">
+        <span>Setup</span>
+        <span>Income</span>
+        <span>Expenses</span>
+        <span>Categories</span>
+        <span class="active">Overview</span>
+      </div>
+    </div>
+    <div class="topnav-right">
+      <i class="ti ti-bell" style="font-size: 18px; color: rgba(255,255,255,0.7);"></i>
+      <div class="avatar">JD</div>
+    </div>
+  </div>
+
+  <div style="padding: 28px 32px;">
+    <div style="display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 20px;">
+      <div>
+        <h2 style="color: #003366; font-size: 22px; margin: 0;">2026 budget overview</h2>
+        <p style="color: #666; font-size: 13px; margin: 4px 0 0;">January 2026 – December 2026</p>
+      </div>
+      <div style="display: flex; gap: 8px;">
+        <button style="background: #fff; color: #003366; border: 1px solid #003366; padding: 8px 14px; border-radius: 6px; font-size: 13px; cursor: pointer;"><i class="ti ti-download" style="font-size: 15px; margin-right: 4px;"></i>Export</button>
+        <button style="background: #fff; color: #003366; border: 1px solid #003366; padding: 8px 14px; border-radius: 6px; font-size: 13px; cursor: pointer;"><i class="ti ti-printer" style="font-size: 15px; margin-right: 4px;"></i>Print</button>
+      </div>
+    </div>
+
+    <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin-bottom: 24px;">
+      <div style="background: #F5F3EC; border-radius: 8px; padding: 16px;">
+        <div style="font-size: 11px; color: #003366; font-weight: 500; letter-spacing: 0.5px;">PLANNED INCOME</div>
+        <div style="font-size: 24px; color: #003366; font-weight: 500; margin-top: 6px;">$145,500</div>
+        <div style="font-size: 11px; color: #888; margin-top: 2px;">Annual</div>
+      </div>
+      <div style="background: #F5F3EC; border-radius: 8px; padding: 16px;">
+        <div style="font-size: 11px; color: #003366; font-weight: 500; letter-spacing: 0.5px;">PLANNED EXPENSES</div>
+        <div style="font-size: 24px; color: #003366; font-weight: 500; margin-top: 6px;">$83,540</div>
+        <div style="font-size: 11px; color: #888; margin-top: 2px;">Annual</div>
+      </div>
+      <div style="background: #003366; border-radius: 8px; padding: 16px;">
+        <div style="font-size: 11px; color: #B5A167; font-weight: 500; letter-spacing: 0.5px;">NET PROJECTED</div>
+        <div style="font-size: 24px; color: #fff; font-weight: 500; margin-top: 6px;">$61,960</div>
+        <div style="font-size: 11px; color: rgba(255,255,255,0.6); margin-top: 2px;">Surplus</div>
+      </div>
+      <div style="background: #F5F3EC; border-radius: 8px; padding: 16px;">
+        <div style="font-size: 11px; color: #003366; font-weight: 500; letter-spacing: 0.5px;">AVG MONTHLY</div>
+        <div style="font-size: 24px; color: #003366; font-weight: 500; margin-top: 6px;">$5,163</div>
+        <div style="font-size: 11px; color: #888; margin-top: 2px;">Net per month</div>
+      </div>
+    </div>
+
+    <div style="background: #fff; border: 1px solid #e5e5e5; border-radius: 8px; padding: 20px; margin-bottom: 20px;">
+      <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 16px;">
+        <div style="color: #003366; font-weight: 500; font-size: 14px;">Monthly income vs expenses</div>
+        <div style="display: flex; gap: 16px; font-size: 11px;">
+          <span style="color: #666;"><span style="display: inline-block; width: 10px; height: 10px; background: #003366; border-radius: 2px; vertical-align: middle; margin-right: 4px;"></span>Income</span>
+          <span style="color: #666;"><span style="display: inline-block; width: 10px; height: 10px; background: #B5A167; border-radius: 2px; vertical-align: middle; margin-right: 4px;"></span>Expenses</span>
+        </div>
+      </div>
+
+      <svg viewBox="0 0 720 220" xmlns="http://www.w3.org/2000/svg" style="width: 100%; height: auto; display: block;">
+        <line x1="40" y1="20" x2="710" y2="20" stroke="#eee" stroke-width="1"/>
+        <line x1="40" y1="65" x2="710" y2="65" stroke="#eee" stroke-width="1"/>
+        <line x1="40" y1="110" x2="710" y2="110" stroke="#eee" stroke-width="1"/>
+        <line x1="40" y1="155" x2="710" y2="155" stroke="#eee" stroke-width="1"/>
+        <line x1="40" y1="190" x2="710" y2="190" stroke="#ccc" stroke-width="1"/>
+
+        <text x="32" y="24" font-size="9" fill="#888" text-anchor="end">$15k</text>
+        <text x="32" y="69" font-size="9" fill="#888" text-anchor="end">$10k</text>
+        <text x="32" y="114" font-size="9" fill="#888" text-anchor="end">$5k</text>
+        <text x="32" y="159" font-size="9" fill="#888" text-anchor="end">$0</text>
+
+        <rect x="50" y="84" width="18" height="106" fill="#003366"/>
+        <rect x="70" y="115" width="18" height="75" fill="#B5A167"/>
+        <text x="69" y="205" font-size="10" fill="#666" text-anchor="middle">Jan</text>
+        <rect x="106" y="84" width="18" height="106" fill="#003366"/>
+        <rect x="126" y="114" width="18" height="76" fill="#B5A167"/>
+        <text x="125" y="205" font-size="10" fill="#666" text-anchor="middle">Feb</text>
+        <rect x="162" y="81" width="18" height="109" fill="#003366"/>
+        <rect x="182" y="116" width="18" height="74" fill="#B5A167"/>
+        <text x="181" y="205" font-size="10" fill="#666" text-anchor="middle">Mar</text>
+        <rect x="218" y="78" width="18" height="112" fill="#003366"/>
+        <rect x="238" y="117" width="18" height="73" fill="#B5A167"/>
+        <text x="237" y="205" font-size="10" fill="#666" text-anchor="middle">Apr</text>
+        <rect x="274" y="81" width="18" height="109" fill="#003366"/>
+        <rect x="294" y="117" width="18" height="73" fill="#B5A167"/>
+        <text x="293" y="205" font-size="10" fill="#666" text-anchor="middle">May</text>
+        <rect x="330" y="84" width="18" height="106" fill="#003366"/>
+        <rect x="350" y="116" width="18" height="74" fill="#B5A167"/>
+        <text x="349" y="205" font-size="10" fill="#666" text-anchor="middle">Jun</text>
+        <rect x="386" y="84" width="18" height="106" fill="#003366"/>
+        <rect x="406" y="114" width="18" height="76" fill="#B5A167"/>
+        <text x="405" y="205" font-size="10" fill="#666" text-anchor="middle">Jul</text>
+        <rect x="442" y="83" width="18" height="107" fill="#003366"/>
+        <rect x="462" y="113" width="18" height="77" fill="#B5A167"/>
+        <text x="461" y="205" font-size="10" fill="#666" text-anchor="middle">Aug</text>
+        <rect x="498" y="83" width="18" height="107" fill="#003366"/>
+        <rect x="518" y="115" width="18" height="75" fill="#B5A167"/>
+        <text x="517" y="205" font-size="10" fill="#666" text-anchor="middle">Sep</text>
+        <rect x="554" y="78" width="18" height="112" fill="#003366"/>
+        <rect x="574" y="117" width="18" height="73" fill="#B5A167"/>
+        <text x="573" y="205" font-size="10" fill="#666" text-anchor="middle">Oct</text>
+        <rect x="610" y="78" width="18" height="112" fill="#003366"/>
+        <rect x="630" y="116" width="18" height="74" fill="#B5A167"/>
+        <text x="629" y="205" font-size="10" fill="#666" text-anchor="middle">Nov</text>
+        <rect x="666" y="74" width="18" height="116" fill="#003366"/>
+        <rect x="686" y="114" width="18" height="76" fill="#B5A167"/>
+        <text x="685" y="205" font-size="10" fill="#666" text-anchor="middle">Dec</text>
+      </svg>
+    </div>
+
+    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+
+      <div style="background: #fff; border: 1px solid #e5e5e5; border-radius: 8px; padding: 18px;">
+        <div style="color: #003366; font-weight: 500; font-size: 14px; margin-bottom: 14px;">Expenses by category</div>
+
+        <div style="margin-bottom: 12px;">
+          <div style="display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 4px;">
+            <span style="color: #003366;">Housing</span>
+            <span style="color: #003366; font-weight: 500;">$34,500 · 41%</span>
+          </div>
+          <div style="background: #F5F3EC; border-radius: 3px; height: 8px; overflow: hidden;">
+            <div style="background: #003366; width: 41%; height: 100%;"></div>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 12px;">
+          <div style="display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 4px;">
+            <span style="color: #003366;">Savings & debt</span>
+            <span style="color: #003366; font-weight: 500;">$24,000 · 29%</span>
+          </div>
+          <div style="background: #F5F3EC; border-radius: 3px; height: 8px; overflow: hidden;">
+            <div style="background: #B5A167; width: 29%; height: 100%;"></div>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 12px;">
+          <div style="display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 4px;">
+            <span style="color: #003366;">Food & groceries</span>
+            <span style="color: #003366; font-weight: 500;">$9,600 · 11%</span>
+          </div>
+          <div style="background: #F5F3EC; border-radius: 3px; height: 8px; overflow: hidden;">
+            <div style="background: #003366; width: 11%; height: 100%;"></div>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 12px;">
+          <div style="display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 4px;">
+            <span style="color: #003366;">Transportation</span>
+            <span style="color: #003366; font-weight: 500;">$8,840 · 11%</span>
+          </div>
+          <div style="background: #F5F3EC; border-radius: 3px; height: 8px; overflow: hidden;">
+            <div style="background: #B5A167; width: 11%; height: 100%;"></div>
+          </div>
+        </div>
+
+        <div style="margin-bottom: 12px;">
+          <div style="display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 4px;">
+            <span style="color: #003366;">Healthcare</span>
+            <span style="color: #003366; font-weight: 500;">$4,800 · 6%</span>
+          </div>
+          <div style="background: #F5F3EC; border-radius: 3px; height: 8px; overflow: hidden;">
+            <div style="background: #003366; width: 6%; height: 100%;"></div>
+          </div>
+        </div>
+
+        <div>
+          <div style="display: flex; justify-content: space-between; font-size: 12px; margin-bottom: 4px;">
+            <span style="color: #003366;">Entertainment</span>
+            <span style="color: #003366; font-weight: 500;">$1,800 · 2%</span>
+          </div>
+          <div style="background: #F5F3EC; border-radius: 3px; height: 8px; overflow: hidden;">
+            <div style="background: #B5A167; width: 2%; height: 100%;"></div>
+          </div>
+        </div>
+      </div>
+
+      <div style="background: #fff; border: 1px solid #e5e5e5; border-radius: 8px; padding: 18px;">
+        <div style="color: #003366; font-weight: 500; font-size: 14px; margin-bottom: 14px;">Monthly cash flow</div>
+
+        <table style="width: 100%; font-size: 12px;">
+          <thead>
+            <tr style="border-bottom: 1px solid #B5A167;">
+              <th style="text-align: left; padding: 6px 4px; color: #003366; font-weight: 500;">Month</th>
+              <th style="text-align: right; padding: 6px 4px; color: #003366; font-weight: 500;">Income</th>
+              <th style="text-align: right; padding: 6px 4px; color: #003366; font-weight: 500;">Expenses</th>
+              <th style="text-align: right; padding: 6px 4px; color: #003366; font-weight: 500;">Net</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="border-bottom: 1px solid #eee;"><td style="padding: 5px 4px;">Jan</td><td style="text-align: right; padding: 5px 4px;">11,750</td><td style="text-align: right; padding: 5px 4px;">6,963</td><td style="text-align: right; padding: 5px 4px; color: #003366; font-weight: 500;">+4,787</td></tr>
+            <tr style="border-bottom: 1px solid #eee;"><td style="padding: 5px 4px;">Feb</td><td style="text-align: right; padding: 5px 4px;">11,750</td><td style="text-align: right; padding: 5px 4px;">6,983</td><td style="text-align: right; padding: 5px 4px; color: #003366; font-weight: 500;">+4,767</td></tr>
+            <tr style="border-bottom: 1px solid #eee;"><td style="padding: 5px 4px;">Mar</td><td style="text-align: right; padding: 5px 4px;">12,150</td><td style="text-align: right; padding: 5px 4px;">6,933</td><td style="text-align: right; padding: 5px 4px; color: #003366; font-weight: 500;">+5,217</td></tr>
+            <tr style="border-bottom: 1px solid #eee;"><td style="padding: 5px 4px;">Apr</td><td style="text-align: right; padding: 5px 4px;">12,450</td><td style="text-align: right; padding: 5px 4px;">6,923</td><td style="text-align: right; padding: 5px 4px; color: #003366; font-weight: 500;">+5,527</td></tr>
+            <tr style="border-bottom: 1px solid #eee;"><td style="padding: 5px 4px;">May</td><td style="text-align: right; padding: 5px 4px;">12,150</td><td style="text-align: right; padding: 5px 4px;">6,863</td><td style="text-align: right; padding: 5px 4px; color: #003366; font-weight: 500;">+5,287</td></tr>
+            <tr style="border-bottom: 1px solid #eee;"><td style="padding: 5px 4px;">Jun</td><td style="text-align: right; padding: 5px 4px;">11,750</td><td style="text-align: right; padding: 5px 4px;">6,923</td><td style="text-align: right; padding: 5px 4px; color: #003366; font-weight: 500;">+4,827</td></tr>
+            <tr style="border-bottom: 1px solid #eee; color: #aaa;"><td style="padding: 5px 4px;">…</td><td style="text-align: right; padding: 5px 4px;">…</td><td style="text-align: right; padding: 5px 4px;">…</td><td style="text-align: right; padding: 5px 4px;">…</td></tr>
+            <tr style="background: #003366; color: #fff;"><td style="padding: 8px 4px; color: #B5A167; font-weight: 500;">Total</td><td style="text-align: right; padding: 8px 4px;">145,500</td><td style="text-align: right; padding: 8px 4px;">83,540</td><td style="text-align: right; padding: 8px 4px; color: #B5A167; font-weight: 500;">+61,960</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>
